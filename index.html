@@ -443,6 +443,7 @@ body::before {
 
 /* ─── Responsive ─── */
 @media (max-width: 768px) {
+  body { line-height: 2.0; }
   .content { padding: 0 1.5rem; }
   .toc-panel { width: 300px; right: -300px; padding: 4rem 1.5rem 2rem; }
   .appendix-section,
@@ -452,10 +453,48 @@ body::before {
     padding: 3rem 1.5rem;
   }
   .chapter { padding: 3rem 0; }
+  .preface { padding: 4rem 0 3rem; margin-bottom: 3rem; }
+  .cover { padding: 80px 1.5rem; }
+  .cover-label { margin-bottom: 2rem; }
+  .cover-title { letter-spacing: 0.08em; }
+  .cover-subtitle { margin-bottom: 2rem; }
+  .cover-ornament { margin-bottom: 2rem; }
+  .appendix-word .kanji { font-size: 2.2rem; }
 }
 
 @media (max-width: 480px) {
+  body { line-height: 1.9; font-size: 15px; }
   .toc-panel { width: 100%; right: -100%; }
+  .content { padding: 0 1.2rem; }
+  .cover { padding: 60px 1.2rem; min-height: 100svh; }
+  .cover-label { font-size: 0.6rem; letter-spacing: 0.3em; margin-bottom: 1.5rem; }
+  .cover-title { letter-spacing: 0.06em; }
+  .cover-subtitle { letter-spacing: 0.12em; margin-bottom: 1.5rem; }
+  .cover-ornament { margin-bottom: 1.5rem; }
+  .preface { padding: 3rem 0 2.5rem; margin-bottom: 2.5rem; }
+  .preface p,
+  .chapter p { text-align: left; font-size: 0.88rem; line-height: 2.0; margin-bottom: 1.3rem; }
+  .preface p.emphasis { font-size: 0.95rem; }
+  .chapter { padding: 2.5rem 0; }
+  .chapter-header { margin-bottom: 2rem; }
+  .chapter-title { letter-spacing: 0.04em; }
+  .chapter-title::after { margin-top: 0.8rem; }
+  .appendix-section,
+  .chapter-band-dark,
+  .chapter-band-warm {
+    margin: 0 -1.2rem;
+    padding: 2.5rem 1.2rem;
+  }
+  .appendix-word { padding: 1.8rem 0; margin: 1.5rem 0; }
+  .appendix-word .kanji { font-size: 1.8rem; }
+  .appendix-section p { font-size: 0.88rem; line-height: 2.0; }
+  .pull { padding: 0.8rem 0 0.8rem 1.2rem; margin: 1.5rem 0; }
+  .pull p { font-size: 0.9rem !important; }
+  .colophon { padding: 3rem 1.2rem; }
+  .colophon .mark { font-size: 1rem; letter-spacing: 0.1em; }
+  .toc-toggle { top: 1rem; right: 1rem; width: 40px; height: 40px; font-size: 0.9rem; }
+  .cover-scroll { bottom: 1.5rem; }
+  .cover-scroll .arrow { height: 36px; }
 }
 </style>
 </head>
